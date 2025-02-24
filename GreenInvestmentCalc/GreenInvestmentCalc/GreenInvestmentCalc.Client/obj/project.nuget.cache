@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y4I/sDsGfgQ=",
+  "dgSpecHash": "UNG0SEqaRHM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daria\\OneDrive - Central New Mexico Community College\\CNM\\Spring 2025\\CIS 2284 - Net II - C#\\Comp4\\GreenInvestmentCalc\\GreenInvestmentCalc\\GreenInvestmentCalc.Client\\GreenInvestmentCalc.Client.csproj",
+  "projectFilePath": "C:\\Users\\Daria\\source\\GreenInvestCalc\\GreenInvestmentCalc\\GreenInvestmentCalc\\GreenInvestmentCalc.Client\\GreenInvestmentCalc.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daria\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.12\\microsoft.aspnetcore.authorization.8.0.12.nupkg.sha512",
     "C:\\Users\\Daria\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.12\\microsoft.aspnetcore.components.8.0.12.nupkg.sha512",
@@ -31,7 +31,8 @@
     "C:\\Users\\Daria\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.12\\microsoft.jsinterop.webassembly.8.0.12.nupkg.sha512",
     "C:\\Users\\Daria\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.13\\microsoft.net.illink.tasks.8.0.13.nupkg.sha512",
     "C:\\Users\\Daria\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.2\\microsoft.net.sdk.webassembly.pack.9.0.2.nupkg.sha512",
-    "C:\\Users\\Daria\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512"
+    "C:\\Users\\Daria\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\Daria\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.13\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.13.nupkg.sha512"
   ],
   "logs": []
 }

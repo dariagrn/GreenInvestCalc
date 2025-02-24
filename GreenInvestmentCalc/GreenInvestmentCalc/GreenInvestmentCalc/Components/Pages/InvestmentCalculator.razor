@@ -8,7 +8,7 @@
 
 <h3>InvestmentCalculator</h3>
 
-<EditForm Model="InvestmentCalc" OnValidSubmit="HandleValidSubmit">
+<EditForm FormName="InvestCalc" Model=@InvestmentCalc OnValidSubmit=@HandleValidSubmit>
     <DataAnnotationsValidator />
     <ValidationSummary />
 
@@ -40,10 +40,10 @@
     <button type="button" class="btn btn-secondary" @onclick="ClearForm">Clear</button>
 </EditForm>
 
-@if (InvestmentCalc.FutureValue > 0)
+@if (InvestmentCalc.Amount > 0)
 {
     <div class="alert alert-success mt-3">
-        <strong>Future Value:</strong> @InvestmentCalc.FutureValue.ToString("C")
+        <strong>Future Value:</strong> @InvestmentCalc.Amount.ToString("C")
     </div>
 }
 
@@ -51,7 +51,7 @@
     private void HandleValidSubmit()
     {
         InvestmentCalc.Calc();
-    }
+    }  
 
     private void ClearForm()
     {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+22GY9PMvs8=",
+  "dgSpecHash": "H0z969KlBeA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daria\\OneDrive - Central New Mexico Community College\\CNM\\Spring 2025\\CIS 2284 - Net II - C#\\Comp4\\GreenInvestmentCalc\\InvestmentCalcTests\\InvestmentCalcTests.csproj",
+  "projectFilePath": "C:\\Users\\Daria\\source\\GreenInvestCalc\\GreenInvestmentCalc\\InvestmentCalcTests\\InvestmentCalcTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daria\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Daria\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

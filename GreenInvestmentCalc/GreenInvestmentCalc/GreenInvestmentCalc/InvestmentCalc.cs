@@ -58,11 +58,11 @@ namespace GreenInvestmentCalc
             }
         }
 
-        public double FutureValue { get; private set; }
+        public double Amount { get; private set; }
 
         public void Calc()
         {
-            FutureValue = principle * Math.Pow(1 + (interestRate / 100) / compPerYear,
+            Amount = principle * Math.Pow(1 + (interestRate / 100) / compPerYear,
               compPerYear * years);
         }
     }

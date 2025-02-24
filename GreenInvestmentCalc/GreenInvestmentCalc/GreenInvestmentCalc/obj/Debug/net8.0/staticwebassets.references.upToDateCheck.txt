@@ -1,0 +1,4 @@
+C:\Users\Daria\source\GreenInvestCalc\GreenInvestmentCalc\GreenInvestmentCalc\GreenInvestmentCalc.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Daria\source\GreenInvestCalc\GreenInvestmentCalc\GreenInvestmentCalc\GreenInvestmentCalc.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Daria\source\GreenInvestCalc\GreenInvestmentCalc\GreenInvestmentCalc\GreenInvestmentCalc.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Daria\source\GreenInvestCalc\GreenInvestmentCalc\GreenInvestmentCalc\GreenInvestmentCalc.Client\obj\Debug\net8.0\staticwebassets.build.json
