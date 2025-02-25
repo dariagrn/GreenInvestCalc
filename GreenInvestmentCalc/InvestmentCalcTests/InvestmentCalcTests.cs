@@ -25,7 +25,7 @@ namespace InvestmentCalcTests
             investmentCalc.Calc();
 
             // Assert
-            Assert.AreEqual(1647.01, investmentCalc.Amount, 0.01);
+            Assert.AreEqual(1647.01, investmentCalc.FutureValue, 0.01);
         }
 
         [TestMethod]
