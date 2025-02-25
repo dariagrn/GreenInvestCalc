@@ -42,12 +42,11 @@
               "Title": "InvestmentCalcTests.cs",
               "DocumentMoniker": "C:\\Users\\Daria\\source\\GreenInvestCalc\\GreenInvestmentCalc\\InvestmentCalcTests\\InvestmentCalcTests.cs",
               "RelativeDocumentMoniker": "InvestmentCalcTests\\InvestmentCalcTests.cs",
-              "ToolTip": "C:\\Users\\Daria\\source\\GreenInvestCalc\\GreenInvestmentCalc\\InvestmentCalcTests\\InvestmentCalcTests.cs*",
-              "RelativeToolTip": "InvestmentCalcTests\\InvestmentCalcTests.cs*",
+              "ToolTip": "C:\\Users\\Daria\\source\\GreenInvestCalc\\GreenInvestmentCalc\\InvestmentCalcTests\\InvestmentCalcTests.cs",
+              "RelativeToolTip": "InvestmentCalcTests\\InvestmentCalcTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T23:57:43.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T23:57:43.467Z"
             },
             {
               "$type": "Document",
@@ -55,9 +54,9 @@
               "Title": "InvestmentCalc.cs",
               "DocumentMoniker": "C:\\Users\\Daria\\source\\GreenInvestCalc\\GreenInvestmentCalc\\GreenInvestmentCalc\\GreenInvestmentCalc\\InvestmentCalc.cs",
               "RelativeDocumentMoniker": "GreenInvestmentCalc\\GreenInvestmentCalc\\InvestmentCalc.cs",
-              "ToolTip": "C:\\Users\\Daria\\source\\GreenInvestCalc\\GreenInvestmentCalc\\GreenInvestmentCalc\\GreenInvestmentCalc\\InvestmentCalc.cs*",
-              "RelativeToolTip": "GreenInvestmentCalc\\GreenInvestmentCalc\\InvestmentCalc.cs*",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Daria\\source\\GreenInvestCalc\\GreenInvestmentCalc\\GreenInvestmentCalc\\GreenInvestmentCalc\\InvestmentCalc.cs",
+              "RelativeToolTip": "GreenInvestmentCalc\\GreenInvestmentCalc\\InvestmentCalc.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T03:03:45.424Z",
               "EditorCaption": ""
