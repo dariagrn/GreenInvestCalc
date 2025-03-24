@@ -1,0 +1,127 @@
+﻿@*Name: Daria Green*@
+@*Email: Dgreen50@cnm.edu*@
+@*File: AssetDetails.razor*@
+
+@page "/Asset-Details/{Id:int?}"
+@inject Asset Asset
+@using System
+@using System.Collections.Generic
+@using System.ComponentModel.DataAnnotations
+@using GreenInvestmentCalc.Components.Models
+@using Microsoft.AspNetCore.Components.Forms
+
+<h3>AssetDetails</h3>
+
+@*Form to input asset details from user*@
+<EditForm FormName="AssetForm" Model=@Asset OnValidSubmit=@SaveAsset>
+	<DataAnnotationsValidator />
+	<ValidationSummary />
+
+	<div class="form-group">
+		<label for="Name">Name</label>
+		<InputText id="Name" class="form-control" @bind-Value="Asset.Name" />
+		
+	</div>
+
+	<div class="form-group">
+		<label for="EntryDate">Entry Date</label>
+		<InputDate id="EntryDate" class="form-control" @bind-Value="Asset.EntryDate" />
+		
+	</div>
+
+	<div class="form-group">
+		<label for="ExitDate">Exit Date</label>
+		<InputDate id="ExitDate" class="form-control" @bind-Value="Asset.ExitDate" />
+		
+	</div>
+
+	<div class="form-group">
+		<label for="StartingValue">Starting Value</label>
+		<InputNumber id="StartingValue" class="form-control" @bind-Value="Asset.StartingValue" />
+		
+	</div>
+
+	<div class="form-group">
+		<label for="SalvageValue">Salvage Value</label>
+		<InputNumber id="SalvageValue" class="form-control" @bind-Value="Asset.SalvageValue" />
+		
+	</div>
+	
+</EditForm>
+
+
+@* Depreciation Table*@
+<h4>Depreciation Over Time</h4>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Year</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var depreciation in DepreciationValues)
+		{
+			<tr>
+				<td>@depreciation.Year</td>
+				<td>@depreciation.Value</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+@code {
+	[Parameter] public int? Id { get; set; }
+	private List<YearlyDepreciation> DepreciationValues = new();
+
+	protected override void OnInitialized()
+	{
+		if(Id.HasValue)
+		{
+			Asset = new Asset
+				{
+					Id = 0,
+					Name = "",
+					EntryDate = DateTime.Now.AddYears(1),
+					ExitDate = DateTime.Now,
+					StartingValue = 0,
+					SalvageValue = 0
+				};
+		}
+		CalculateDepreciation();
+	}
+
+	private void CalculateDepreciation()
+	{
+		if (Asset.EntryDate >= Asset.ExitDate)
+		{
+			throw new ArgumentException("Exit must be later than Entry Date.");
+		}
+
+		int totalYears = Asset.ExitDate.Year - Asset.EntryDate.Year;
+		double annualDepreciation = (Asset.StartingValue - Asset.SalvageValue) / totalYears;
+
+		DepreciationValues = new();
+		for (int i = 0; i <= totalYears; i++)
+		{
+			double value = Asset.StartingValue - (annualDepreciation * i);
+			DepreciationValues.Add(new YearlyDepreciation
+				{
+					Year = Asset.EntryDate.Year + i,
+					Value = Math.Max(value, Asset.SalvageValue)
+				});
+		}
+	}
+
+	private void SaveAsset()
+	{
+		//Save Asset logic (e.g., database)
+		CalculateDepreciation();
+	}
+
+	public class YearlyDepreciation
+	{
+		public int Year { get; set; }
+		public double Value { get; set; }
+	}
+}
